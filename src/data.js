@@ -17,7 +17,17 @@ export const CVData = {
       {
         type: 'text',
         title: 'Career Profile',
-        content: 'When I was child, I always want to be a developer. I think I am now. Culpa proident ad officia minim Lorem sint excepteur irure culpa nisi aliquip nostrud.Laborum voluptate nostrud fugiat occaecat proident veniam excepteur pariatur amet ex sit.Anim aliquip do in commodo adipisicing.Nulla adipisicing nisi enim ullamco sunt veniam.Ullamco labore sunt Lorem veniam id et Lorem magna eiusmod aute. Aliquip minim est consectetur anim mollit aliqua ex elit do et nulla do. Cupidatat ad sunt cillum sint consectetur sunt cillum eiusmod ad esse aliqua. Aute anim elit amet in duis aute ipsum deserunt qui deserunt officia excepteur veniam. Et laboris nostrud est ipsum nulla fugiat deserunt magna velit irure. Ullamco duis ut magna ea tempor enim in ipsum.',
+        content: 'When I was child, I always want to be a developer.' +
+        'I think I am now. Culpa proident ad officia minim Lorem sint ' +
+        'excepteur irure culpa nisi aliquip nostrud.Laborum voluptate' +
+        'nostrud fugiat occaecat proident veniam excepteur pariatur amet ex sit.' +
+        'Anim aliquip do in commodo adipisicing.Nulla adipisicing nisi enim ullamco'  +
+        'sunt veniam.Ullamco labore sunt Lorem veniam id et Lorem magna eiusmod aute.' +
+        'Aliquip minim est consectetur anim mollit aliqua ex elit do et nulla do. Cupidatat' +
+        'ad sunt cillum sint consectetur sunt cillum eiusmod ad esse aliqua. Aute anim elit' +
+        'amet in duis aute ipsum deserunt qui deserunt officia excepteur veniam. Et laboris' +
+        'nostrud est ipsum nulla fugiat deserunt magna velit irure. Ullamco duis ut magna ea'  +
+        'tempor enim in ipsum.',
         icon: 'usertie'
       },
       {
@@ -26,49 +36,59 @@ export const CVData = {
         icon: 'graduation',
         items: [
           {
-            title: 'Computer Engineering (BS)',
-            authority: 'University',
-            authorityWebSite: 'https://sample.edu',
-            rightSide: '2013 - 2017'
+            title: 'Computer Science (BS)',
+            authority: 'Virginia State  University',
+            authorityWebSite: 'http://www.cet.vsu.edu/departments/engineering/programs/computer-science/index.php',
+            rightSide: '2016 - 2020'
           },
           {
-            title: 'Some Department (PHD)',
-            authority: 'Another University',
-            authorityWebSite: 'https://sample.edu',
-            rightSide: '2017 - Present'
+            title: 'Computer Science (PHD)',
+            authority: 'University Of Virginia',
+            authorityWebSite: 'https://engineering.virginia.edu/departments/computer-science',
+            rightSide: '2020 - Present'
           }
         ]
       },
       {
         type: 'experiences-list',
         title: 'Experiences',
-        description: 'Optional',
         icon: 'archive',
         items: [
           {
-            title: 'Lead Software Developer',
-            company: 'Some Company Example INC',
-            description: 'I\'m working as a lead developer yeeeey!',
+            title: 'Software Engineering Intern',
+            company: 'Apple',
+            description: 'I made a desktop application to  simulate the host-stack of third-party BLE devices',
             companyWebSite: 'http://somecompanyexample.com',
             companyMeta: '',
             datesBetween: '2017.10 - Present',
-            descriptionTags: ['Javascript', 'React']
+            descriptionTags: ['Python', 'Mongo-DB']
           },
           {
-            title: 'Software Developer',
-            company: 'Some Company Example INC',
-            description: 'I\'m using ReactJS and working as a front-end developer',
+            title: 'Software Engineering Intern',
+            company: 'VSU-Skype Partnership',
+            description: 'I made a Skype-Add in using React JS',
             companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: 'Little info about company',
-            datesBetween: '2016.8 - 2017.10'
+            companyMeta: '',
+            datesBetween: '2017.10 - Present',
+            descriptionTags: ['JavaScript', 'React']
           },
           {
-            title: 'Intern',
-            company: 'Some Software Example INC',
-            description: 'I was warming up.',
-            companyWebSite: 'http://someexamplecompany.com',
-            companyMeta: 'SF USA',
-            datesBetween: '2012.06 - 2012.10'
+            title: 'Software Development Intern',
+            company: 'IBM',
+            description: 'I worked as a developer on Watson Content Hub',
+            companyWebSite: 'http://somecompanyexample.com',
+            companyMeta: '',
+            datesBetween: '2016.8 - 2017.10',
+            descriptionTags: ['Node-JS', 'Docker',  'Jenkins']
+          },
+          {
+            title: 'Software Development Intern',
+            company: 'VSU-Skype Partnership',
+            description: 'I made chat-bots using C#',
+            companyWebSite: 'http://somecompanyexample.com',
+            companyMeta: '',
+            datesBetween: '2016.8 - 2017.10',
+            descriptionTags: ['C#', "Git"]
           }
         ]
       },
@@ -91,36 +111,12 @@ export const CVData = {
       },
       {
         type: 'common-list',
-        title: 'Conferences & Certificates',
-        description: '',
-        icon: 'comments',
-        items: [
-          {
-            title: 'Some Conferences / 2019',
-            authority: 'SomeConf',
-            authorityWebSite: 'https://www.someconf.somesome'
-          },
-          {
-            title: 'Some Conferences / 2019',
-            authority: 'SomeConf',
-            authorityMeta: 'Speaker',
-            authorityWebSite: 'https://www.someconf.somesome',
-            rightSide: 'test'
-          },
-          {
-            title: 'Some Conferences / 2012',
-            authorityMeta: 'Speaker'
-          }
-        ]
-      },
-      {
-        type: 'common-list',
         title: 'Languages',
         icon: 'language',
         items: [
           {
             authority: 'English',
-            authorityMeta: 'Professional'
+            authorityMeta: 'Native'
           },
           {
             authority: 'Spanish',
@@ -132,7 +128,7 @@ export const CVData = {
         type: 'tag-list',
         title: 'Skills Proficiency',
         icon: 'rocket',
-        items: ['React', 'Javascript', 'CSS', 'SQL', 'SomeTech', 'CoolTech']
+        items: ['React', 'Javascript', 'Python', 'C++', 'C', 'Git'],
       },
       {
         type: 'tag-list',
@@ -142,4 +138,3 @@ export const CVData = {
       }
     ]
   }
-  
