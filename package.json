@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "name": "dwil2444.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dwil2444/dwil2444.github.io.git",
+  "author": "dwil2444 <daneandrew16@gmail.com>",
+  "license": "MIT"
+}
