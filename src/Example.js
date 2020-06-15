@@ -12,7 +12,7 @@ export default class Example extends React.Component {
           image: 'https://bulma.io/images/placeholders/128x128.png',
           contacts: [
             { type: 'email', value: 'dw3zn@virginia.edu' },
-            { type: 'phone', value: '804-490-874' },
+            { type: 'phone', value: '804-490-8574' },
             { type: 'location', value: 'Charlottesville, VA' },
             { type: 'website', value: 'dwil2444.github.io' },
             { type: 'linkedin', value: 'www.linkedin.com/in/dane-a-williamson' },
@@ -21,10 +21,10 @@ export default class Example extends React.Component {
         sections= {[{
           type: 'text',
           title: 'Career Profile',
-          content: 'When I was child, I always want to be a developer.',
+          content: 'Incoming PhD in CS Student at the University of Virginia',
           icon: 'usertie'
         }]}
-        branding={true} // or false to hide it.
+        branding={false} // or false to hide it.
       />
     )
   }
