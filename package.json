@@ -1,15 +1,25 @@
 {
   "dependencies": {
+    "@babel/preset-react": "^7.10.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "live-server": "^1.2.1",
     "react": "^16.13.1",
+    "react-cv": "^1.1.0",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0"
   },
   "name": "dwil2444.github.io",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "clean": "rm -rf ./node_modules",
+    "init": "yarn install",
+    "start": "live-server public"
+  },
   "repository": "https://github.com/dwil2444/dwil2444.github.io.git",
   "author": "dwil2444 <daneandrew16@gmail.com>",
   "license": "MIT",

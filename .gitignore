@@ -60,4 +60,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Node JS Dependencies
 ./node_modules/
+
+# apple specific 
+.DS_Store
