@@ -3,12 +3,12 @@ export const CVData = {
     personalData: {
       name: 'Dane Williamson',
       title: 'CS PhD Student at University of Virginia',
-      image: 'https://bulma.io/images/placeholders/128x128.png',
+      image: 'https://i.ibb.co/P9SLqts/IMG-1152.jpg',
       contacts: [
         { type: 'email', value: 'dw3zn@virginia.edu' },
         { type: 'phone', value: '804-490-8574' },
         { type: 'location', value: 'Charlottesville, VA' },
-        { type: 'website', value: 'dwil2444.github.io' },
+        { type: 'website', value: 'danewilliamson.me' },
         { type: 'linkedin', value: 'www.linkedin.com/in/dane-a-williamson' },
         { type: 'github', value: 'github.com/dwil2444' }
       ]
@@ -17,17 +17,9 @@ export const CVData = {
       {
         type: 'text',
         title: 'Career Profile',
-        content: 'When I was child, I always want to be a developer.' +
-        'I think I am now. Culpa proident ad officia minim Lorem sint ' +
-        'excepteur irure culpa nisi aliquip nostrud.Laborum voluptate' +
-        'nostrud fugiat occaecat proident veniam excepteur pariatur amet ex sit.' +
-        'Anim aliquip do in commodo adipisicing.Nulla adipisicing nisi enim ullamco'  +
-        'sunt veniam.Ullamco labore sunt Lorem veniam id et Lorem magna eiusmod aute.' +
-        'Aliquip minim est consectetur anim mollit aliqua ex elit do et nulla do. Cupidatat' +
-        'ad sunt cillum sint consectetur sunt cillum eiusmod ad esse aliqua. Aute anim elit' +
-        'amet in duis aute ipsum deserunt qui deserunt officia excepteur veniam. Et laboris' +
-        'nostrud est ipsum nulla fugiat deserunt magna velit irure. Ullamco duis ut magna ea'  +
-        'tempor enim in ipsum.',
+        content: 'My interests include Full Stack Web Development, Video Game Development, Machine Learning, ' +
+        'Software Engineering and Augmented Reality. My PSN Online ID is redwulf1886, so I welcome all challengers' +
+        '(especially in FIFA)',
         icon: 'usertie'
       },
       {
@@ -55,57 +47,32 @@ export const CVData = {
         icon: 'archive',
         items: [
           {
-            title: 'Software Engineering Intern',
+            title: 'Software Development Intern',
             company: 'Apple',
-            description: 'I made a desktop application to  simulate the host-stack of third-party BLE devices',
-            companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: '',
-            datesBetween: '2017.10 - Present',
+            description: 'Cupertino, CA',
+            datesBetween: '2019.05 - 2019.08',
             descriptionTags: ['Python', 'Mongo-DB']
           },
           {
-            title: 'Software Engineering Intern',
+            title: 'Software Development Intern',
             company: 'VSU-Skype Partnership',
-            description: 'I made a Skype-Add in using React JS',
-            companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: '',
-            datesBetween: '2017.10 - Present',
+            description: 'Petersburg, VA',
+            datesBetween: '2018.08 - 2019.05',
             descriptionTags: ['JavaScript', 'React']
           },
           {
-            title: 'Software Development Intern',
+            title: 'Software Engineering Intern',
             company: 'IBM',
-            description: 'I worked as a developer on Watson Content Hub',
-            companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: '',
-            datesBetween: '2016.8 - 2017.10',
+            description: 'Raleigh, NC',
+            datesBetween: '2018.05 - 2018.08',
             descriptionTags: ['Node-JS', 'Docker',  'Jenkins']
           },
           {
             title: 'Software Development Intern',
             company: 'VSU-Skype Partnership',
-            description: 'I made chat-bots using C#',
-            companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: '',
-            datesBetween: '2016.8 - 2017.10',
+            description: 'Petersburg, VA',
+            datesBetween: '2017.08 - 2018.05',
             descriptionTags: ['C#', "Git"]
-          }
-        ]
-      },
-      {
-        type: 'projects-list',
-        title: 'Projects',
-        description: 'Optional',
-        icon: 'tasks',
-        groups: [
-          {
-            sectionHeader: 'Company Name',
-            description: 'Optional',
-            items: [
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' },
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' },
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' }
-            ]
           }
         ]
       },
@@ -128,13 +95,7 @@ export const CVData = {
         type: 'tag-list',
         title: 'Skills Proficiency',
         icon: 'rocket',
-        items: ['React', 'Javascript', 'Python', 'C++', 'C', 'Git'],
+        items: ['React', 'Javascript', 'Python', 'C++', 'Java', 'C', 'Git', 'Bluetooth Low Energy (BLE)', 'RESTful API\'s'],
       },
-      {
-        type: 'tag-list',
-        title: 'Hobbies & Interests',
-        icon: 'cubes',
-        items: ['Photography', 'Poetry']
-      }
     ]
   }
