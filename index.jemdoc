@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{index.html}
+= Dane Williamson
+
+~~~
+{}{img_left}{img_left.jpg}{alt text}{128px}{128px}{}
+Dane Williamson \n
+Ph.D. Student \n
+[https://engineering.virginia.edu/departments/computer-science]
+\n
+[https://www.virginia.edu/ UVA] \n
+Contact: [dw3zn@virginia.edu Email], [https://github.com/dwil2444 Github], [https://www.linkedin.com LinkedIn]
+~~~
+
+== Short Bio
+I am a PhD student at the University of Virginia. My advisor is Lu Feng, and I am conducting research
+in the domain of Medical Cyber-Physical Systems. I obtained my Bachelors degree in CS from Virginia State University.
+
+== Education 
+- Ph.D., School of Engineering and Applied Sciences, University of Virginia,
+Charlottesville, VA, USA, Aug.2020 - Present
+
+- B.S., College of Engineering and Technology, Virginia State University,
+Petersburg, VA, USA, Aug. 2016 - May. 2020
+
+== Research Interests
+- Software Engineering
+- Cyber-Physical Systems
+- Autonomous Vehicles
+- Human-Computer Interaction
+- Computer Science Education
