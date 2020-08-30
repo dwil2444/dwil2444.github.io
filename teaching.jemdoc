@@ -1,0 +1,21 @@
+# jemdoc: menu{MENU}{teaching.html}
+= Dane Williamson
+
+~~~
+{}{img_left}{img_left.jpg}{alt text}{128px}{128px}{}
+Dane Williamson \n
+Ph.D. Student \n
+[https://engineering.virginia.edu/departments/computer-science]
+\n
+[https://www.virginia.edu/ UVA] \n
+Contact: [dw3zn@virginia.edu Email], [https://github.com/dwil2444 Github], [https://www.linkedin.com LinkedIn]
+~~~
+
+== Past Courses
+- CSCI 120 -  Introduction to Programming
+- CSCI 150 -  Programming I
+- CSCI 151 -  Programming I Lab
+- CSCI 250 -  Programming II
+- CSCI 251 -  Programming II Lab
+- CSCI 287 -  Data Structures
+- CSCI 296 -  Web Programmingg
