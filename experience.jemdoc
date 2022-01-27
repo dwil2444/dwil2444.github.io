@@ -13,15 +13,19 @@ Contact: [dw3zn@virginia.edu Email], [https://github.com/dwil2444 Github], [http
 
 
 == Experiences
+
+- PhD Software Engineering Intern, Oracle Machine Learning Research Group - Burlington, MA (May - Aug 2021)
+-- Pretrained BERT using internal toolkit.
+-- Designed and implemented Probes for knowledge and language understanding in BERT transformers.
+-- Evaluated model performance on GLUE benchmarks using the Jiant toolkit.
+-- Utilized shared SLURM cluster for transformer pretraining, finetuning and evaluation.
+
 - Software Engineering Intern, Apple - Cupertino, CA (May - Aug. 2019)
--- Developed Python Desktop Application to simulate Host Stack of third party BLE De-
-vices
--- Developed Web-Scraper to populate MongoDB database with SIG Bluetooth Specifica-
-tions.
+-- Developed Python Desktop Application to simulate Host Stack of third party BLE Devices
+-- Developed Web-Scraper to populate MongoDB database with SIG Bluetooth Specifications.
 -- Utilized internal Python-based framework to communicate with BLE controller via HCI
 commands.
--- Simulated BLE GATT Server using database containing specifications and HCI Com-
-mands.
+-- Simulated BLE GATT Server using database containing specifications and HCI Commands.
 -- Presented to Vice-President of Wireless Organization.
 
 - Software Engineering Intern, VSU - Petersburg, VA (Aug. 2018 - May. 2019 )
@@ -31,14 +35,12 @@ mands.
 - Software Engineering Intern, IBM - Raleigh, NC (May - Aug. 2018 )
 -- Wrote automated end-to-end user-interface tests in Protractor Framework for Watson
 Content Hub.
--- Utilized JavaScript/TypeScript to conduct automated API testing in Staging and Pro-
-duction environments.
+-- Utilized JavaScript/TypeScript to conduct automated API testing in Staging and Production environments.
 -- Configured Continuous Integration (CI) testing jobs with Jenkins pipeline builds for
 Docker and NPM registries.
 
 - Software Engineering Intern, VSU - Petersburg, VA (Aug. 2017 - May. 2018 )
--- Worked within a team to design and implement chat-bots within the Skype-Bot frame-
-work using C#.
+-- Worked within a team to design and implement chat-bots within the Skype-Bot framework using C#.
 -- Collaborated and reported regularly with Microsoft/Skype engineers who supervised
 the project.
 -- Utilized version control systems to maintain and develop code in a shared repository.
