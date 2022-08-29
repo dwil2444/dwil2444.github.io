@@ -1,6 +1,6 @@
 
 # Global options
-baseURL = "https://dwil2444.github.io/"
+baseURL = "https://dwil2444.github.io/1"
 canonifyURLs = false
 copyright = "© 2022 by Dane Williamson. <a href='/privacy'>Privacy policy</a>."
 defaultContentLanguage = "en"
