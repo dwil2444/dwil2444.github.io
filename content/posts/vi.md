@@ -9,7 +9,7 @@ draft: false
 
 **Variational Inference** is a technique used in Bayesian Statistics to approximate **$p ( z \mid x)$** the conditional density of an unknown variable, **z** given an observed variable, **x** through optimization. To find this approximate density:
 - select a family of densities, $\mathscr{D}$ over the latent variables. Each member of the family q(z) $\in \mathscr{D}$ is a candidate approximation to the true density.
-- The optimization problem is then to find the member of this family which is closest in **Kullback-Leibler (KL) divergence** to the conditional density of interest.: 
+- The optimization problem is then to find the member of this family which is closest in **Kullback-Leibler (KL) divergence** to the conditional density of interest: 
 $$
 q^{*} (z) = \underset{q(z) \in \mathscr{D}}{\text{arg min}} \quad \text{KL} (q(z) \mid \mid p(z \mid x))
 $$
