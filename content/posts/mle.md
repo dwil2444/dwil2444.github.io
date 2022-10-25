@@ -35,4 +35,4 @@ This is a product of all the observation probabilities. Each observation is trea
 ##### A Quick Note on Log-Likelihood:
 
 The natural logarithm: $\log(x) / \ln(x)$ is a monotonically increasing function. Maximising the log-likelihood is equivalent to maximising the likelihood.  
-**N.B.** The natural log is typically easier to differentiate and is more convenient to optimise in finding the MLE.
+**N.B.** The natural $\log$ is typically easier to differentiate and is more convenient to optimise in finding the MLE.
