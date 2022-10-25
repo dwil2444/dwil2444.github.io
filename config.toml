@@ -76,7 +76,7 @@ info = ["Dane Williamson", "Department of Computer Science", "University of Virg
         [params.social.github]
             name = "GitHub"
             icon = "fa fa-2x fa-github"
-            url = "https://github.com/dwil"
+            url = "https://github.com/dwil2444"
             weight = 2
         [params.social.google_scholar]
             name = "Google Scholar"
