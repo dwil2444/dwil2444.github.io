@@ -22,3 +22,17 @@ This can become confusing due to similarities in terminology/notation:
 ##### Maximum Likelihood Estimation:
 What is Maximum Likelihood exactly? ML is the **values of the parameters of the statistical model under which the observed data is most probable.** To find these parameters we maximise the **likelihood function** to obtain:
 $$ \hat{\theta} = {argmax}_{\theta \in \Theta} \mathcal{L} (\theta \mid y)$$
+
+
+##### Likelihood Function:
+The joint probability density of the outcomes: $Y_{1}, Y_{2}, ... Y_{n}$ observed, when these outcomes are regarded as a function of model parameters: $\theta_{1}, \theta_{2}, ... \theta_{n}$ is the Likelihood function:
+
+$$ L(\theta_{1}, ... \theta_{m})  = \prod\limits_{i=1}^{n} f (y_{i}; \theta_{1}, ... \theta_{m})$$
+
+This is a product of all the observation probabilities. Each observation is treated as independent and is parameterised by the different "distribution parameters."
+
+
+##### A Quick Note on Log-Likelihood:
+
+The natural logarithm: $\log(x) / \ln(x)$ is a monotonically increasing function. Maximising the log-likelihood is equivalent to maximising the likelihood.  
+**N.B.** The natural log is typically easier to differentiate and is more convenient to optimise in finding the MLE.
