@@ -7,6 +7,7 @@ hide_title: true
 
 
 ## Courses Taught  
+* [CS 4774 - Machine Learning (Spring 2023)](https://yangfengji.net/uva-ml-undergrad/)
 * [CS 6316 - Machine Learning (Spring 2022)](http://yangfengji.net/uva-ml-course/)  
 * CSCI 120 - Introduction to Computer Science  (Fall 2017, Spring 2018)
 * CSCI 150/151 - Programming I & Programming I Lab  (Fall 2019, Spring 2020)
