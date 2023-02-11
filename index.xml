@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2022 by Dane Williamson. &lt;a href=&#39;https://dwil2444.github.io/privacy&#39;&gt;Privacy policy&lt;/a&gt;.</copyright>
-    <lastBuildDate>Tue, 10 May 2022 15:10:15 -0400</lastBuildDate><atom:link href="https://dwil2444.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 21:05:22 -0500</lastBuildDate><atom:link href="https://dwil2444.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Information Theory</title>
+      <link>https://dwil2444.github.io/posts/it/</link>
+      <pubDate>Fri, 10 Feb 2023 21:05:22 -0500</pubDate>
+      
+      <guid>https://dwil2444.github.io/posts/it/</guid>
+      <description>Brief Notes on Information Theory Surprise: Given a stochastic process which generates data $x$, the surprise associated with each datapoint is the reciprocal of its probability: $$ s(x) = \frac{1}{p(x)}; $$. The lower the probability of an observation, the more &amp;ldquo;surprised&amp;rdquo; we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function: $$ s(x) = \log ( \frac{1}{p(x)} )$$ $$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) + \log ( \frac{1}{p(y)} )= s(x) + s(y) $$ Average Surprise: Each observation has an associated probability.</description>
+    </item>
+    
     <item>
       <title>Variational Autoencoders</title>
       <link>https://dwil2444.github.io/posts/vae/</link>
