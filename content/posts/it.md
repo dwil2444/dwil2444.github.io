@@ -22,4 +22,4 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) + p_{2} \log (\frac{1}{p_{2}})  + ... + p_{n
 
 - given $$ \log \frac{1}{p_{i}} = - \log (p_{i})$$
 
-$$\underbrace{H = - (p_{1} \log p_{1} + ... + p_{n} \log p_{n})}_\text{This is known as ENTROPY. Entropy can be considered as the expected average surprise.}$$
+$$\underbrace{H = - (p_{1} \log p_{1} + ... + p_{n} \log p_{n})}_\text{This is known as ENTROPY. Entropy can be considered as the expected surprise.}$$
