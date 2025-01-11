@@ -12,7 +12,7 @@
 
 
 
-<meta name="description" content="Brief Notes on Information Theory 
+<meta name="description" content="Brief Notes on Information Theory
 
   Surprise:
   
@@ -20,35 +20,27 @@
     Link to heading
   
 
-
-Given a stochastic process which generates data $x$, the surprise associated with each datapoint is the reciprocal of its probability:
-$$ s(x) = \frac{1}{p(x)}; $$.
-The lower the probability of an observation, the more &ldquo;surprised&rdquo; we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function:
-$$ s(x) = \log ( \frac{1}{p(x)} )$$
-$$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) &#43; \log ( \frac{1}{p(y)} )= s(x) &#43; s(y)  $$
-
-
-  Average Surprise:
-  
-    
-    Link to heading
-  
-
-Each observation has an associated probability. To get the amount of information produced by a series of inputs, we can take the expected value:.
-N.B. The Expected Surprise is the surprise for each outcome weighted by its probability:
-$$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &hellip; &#43; p_{n} \log (\frac{1}{p_{n}})$$">
+Surprise quantifies how unexpected an observation $x$ is, based on its probability $p(x)$. Rare events (low $p(x)$) are more surprising. Mathematically, the surprise (sometimes called self-information) is defined as the logarithm of the inverse of the probability of an event:
+$$
+s(x) = \log \left( \frac{1}{p(x)} \right) = -\log(p(x))
+$$
+This means that less probable (or rarer) events produce more surprise because the logarithm of a smaller probability results in a larger value (after negation).">
 <meta name="keywords" content="">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Information Theory">
-  <meta name="twitter:description" content="Brief Notes on Information Theory Surprise: Link to heading Given a stochastic process which generates data $x$, the surprise associated with each datapoint is the reciprocal of its probability: $$ s(x) = \frac{1}{p(x)}; $$. The lower the probability of an observation, the more “surprised” we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function: $$ s(x) = \log ( \frac{1}{p(x)} )$$ $$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) &#43; \log ( \frac{1}{p(y)} )= s(x) &#43; s(y) $$ Average Surprise: Link to heading Each observation has an associated probability. To get the amount of information produced by a series of inputs, we can take the expected value:. N.B. The Expected Surprise is the surprise for each outcome weighted by its probability: $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}}) &#43; … &#43; p_{n} \log (\frac{1}{p_{n}})$$">
+  <meta name="twitter:description" content="Brief Notes on Information Theory Surprise: Link to heading Surprise quantifies how unexpected an observation $x$ is, based on its probability $p(x)$. Rare events (low $p(x)$) are more surprising. Mathematically, the surprise (sometimes called self-information) is defined as the logarithm of the inverse of the probability of an event:
+$$ s(x) = \log \left( \frac{1}{p(x)} \right) = -\log(p(x)) $$
+This means that less probable (or rarer) events produce more surprise because the logarithm of a smaller probability results in a larger value (after negation).">
 
-<meta property="og:url" content="https://dwil2444.github.io/posts/it/">
+<meta property="og:url" content="https://dwil2444.github.io/posts/entropy/">
   <meta property="og:site_name" content="home">
   <meta property="og:title" content="Information Theory">
-  <meta property="og:description" content="Brief Notes on Information Theory Surprise: Link to heading Given a stochastic process which generates data $x$, the surprise associated with each datapoint is the reciprocal of its probability: $$ s(x) = \frac{1}{p(x)}; $$. The lower the probability of an observation, the more “surprised” we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function: $$ s(x) = \log ( \frac{1}{p(x)} )$$ $$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) &#43; \log ( \frac{1}{p(y)} )= s(x) &#43; s(y) $$ Average Surprise: Link to heading Each observation has an associated probability. To get the amount of information produced by a series of inputs, we can take the expected value:. N.B. The Expected Surprise is the surprise for each outcome weighted by its probability: $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}}) &#43; … &#43; p_{n} \log (\frac{1}{p_{n}})$$">
+  <meta property="og:description" content="Brief Notes on Information Theory Surprise: Link to heading Surprise quantifies how unexpected an observation $x$ is, based on its probability $p(x)$. Rare events (low $p(x)$) are more surprising. Mathematically, the surprise (sometimes called self-information) is defined as the logarithm of the inverse of the probability of an event:
+$$ s(x) = \log \left( \frac{1}{p(x)} \right) = -\log(p(x)) $$
+This means that less probable (or rarer) events produce more surprise because the logarithm of a smaller probability results in a larger value (after negation).">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -58,7 +50,7 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &h
 
 
 
-<link rel="canonical" href="https://dwil2444.github.io/posts/it/">
+<link rel="canonical" href="https://dwil2444.github.io/posts/entropy/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -165,7 +157,7 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &h
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://dwil2444.github.io/posts/it/">
+            <a class="title-link" href="https://dwil2444.github.io/posts/entropy/">
               Information Theory
             </a>
           </h1>
@@ -180,7 +172,7 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &h
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              One-minute read
+              3-minute read
             </span>
           </div>
           
@@ -191,7 +183,7 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &h
 
       <div class="post-content">
         
-        <h1 align="center">Brief Notes on Information Theory </h1>
+        <h1 align="center">Brief Notes on Information Theory</h1>
 <h3 id="surprise">
   Surprise:
   <a class="heading-link" href="#surprise">
@@ -199,27 +191,84 @@ $$ H = p_{1} \log (\frac{1}{p_{1}}) &#43; p_{2} \log (\frac{1}{p_{2}})  &#43; &h
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<ul>
-<li>Given a stochastic process which generates data $x$, the <strong>surprise</strong> associated with each datapoint is the reciprocal of its probability:
-$$ s(x) = \frac{1}{p(x)}; $$.</li>
-<li>The lower the probability of an observation, the more &ldquo;surprised&rdquo; we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function:
-$$ s(x) = \log ( \frac{1}{p(x)} )$$
-$$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) + \log ( \frac{1}{p(y)} )= s(x) + s(y)  $$</li>
-</ul>
-<h3 id="average-surprise">
-  Average Surprise:
-  <a class="heading-link" href="#average-surprise">
+<p>Surprise quantifies how unexpected an observation $x$ is, based on its probability $p(x)$. Rare events (low $p(x)$) are more surprising. Mathematically, the surprise (sometimes called self-information) is defined as the logarithm of the inverse of the probability of an event:</p>
+<p>$$
+s(x) = \log \left( \frac{1}{p(x)} \right) = -\log(p(x))
+$$</p>
+<p>This means that less probable (or rarer) events produce more surprise because the logarithm of a smaller probability results in a larger value (after negation).</p>
+<p>For two independent events $ x $ and $y$, surprise is additive:</p>
+<p>$$
+s(xy) = \log \left( \frac{1}{p(x)p(y)} \right) = \log \left( \frac{1}{p(x)} \right) + \log \left( \frac{1}{p(y)} \right) = s(x) + s(y).
+$$</p>
+<hr />
+<h3 id="average-surprise-entropy">
+  Average Surprise (Entropy):
+  <a class="heading-link" href="#average-surprise-entropy">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Each observation has an associated probability. To get the amount of information produced by a series of inputs, we can take the <strong>expected value:</strong>.
-<strong>N.B.</strong> The <strong>Expected Surprise</strong> is the surprise for each outcome weighted by its probability:
-$$ H = p_{1} \log (\frac{1}{p_{1}}) + p_{2} \log (\frac{1}{p_{2}})  + &hellip; + p_{n} \log (\frac{1}{p_{n}})$$</p>
+<p>If data is generated by a stochastic process, the <strong>expected value of surprise</strong> gives the <strong>average information content</strong>, also known as <strong>entropy</strong>. The formula for entropy is:</p>
+<p>$$
+H = \sum_{i=1}^n p_i \log \left( \frac{1}{p_i} \right),
+$$</p>
+<p>where $ p_i$ is the probability of the $i$-th outcome.</p>
+<p>Simplifying using $ \log \frac{1}{p_i} = -\log(p_i) $, we get:</p>
+<p>$$
+H = - \sum_{i=1}^n p_i \log(p_i).
+$$</p>
 <ul>
-<li>given $$ \log \frac{1}{p_{i}} = - \log (p_{i})$$</li>
+<li>Essentially, we can interpret the entropy, $H$ as the expected value of surprise across all possible outcomes. Each outcomes suprise is weighted by its probability. This is why Entropy is a measure of uncertainty - higher entropy means more unpredictability or surprise in a system.</li>
 </ul>
-<p>$$\underbrace{H = - (p_{1} \log p_{1} + &hellip; + p_{n} \log p_{n})}_\text{This is known as ENTROPY. Entropy can be considered as the expected surprise.}$$</p>
+<hr />
+<h3 id="intuitive-example-of-entropy">
+  Intuitive Example of Entropy:
+  <a class="heading-link" href="#intuitive-example-of-entropy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Consider a fair coin flip, where there are two possible outcomes: heads or tails. The probability of each outcome is:</p>
+<ul>
+<li>$ p(\text{heads}) = 0.5 $</li>
+<li>$ p(\text{tails}) = 0.5 $</li>
+</ul>
+<p>The entropy $H$ of this system can be calculated as:</p>
+<p>$$
+H = \sum_{i=1}^2 p_i \log \left( \frac{1}{p_i} \right)
+$$</p>
+<p>For the fair coin flip, we have:</p>
+<p>$$
+H = (0.5 \cdot \log \left( \frac{1}{0.5} \right)) + (0.5 \cdot \log \left( \frac{1}{0.5} \right))
+$$</p>
+<p>Since $ \log \left( \frac{1}{0.5} \right) = 1 $, this simplifies to:</p>
+<p>$$
+H = (0.5 \cdot 1) + (0.5 \cdot 1) = 1 \text{ bit}
+$$</p>
+<p>This result of 1 bit makes sense because, in this case, there is equal surprise for both heads and tails. The system is perfectly balanced and unpredictable, meaning there is maximum uncertainty.</p>
+<hr />
+<p>Now, consider a biased coin where one outcome is more likely than the other. For instance:</p>
+<ul>
+<li>$ p(\text{heads}) = 0.8 $</li>
+<li>$ p(\text{tails}) = 0.2 $</li>
+</ul>
+<p>The entropy for this biased coin would be:</p>
+<p>$$
+H = (0.8 \cdot \log \left( \frac{1}{0.8} \right)) + (0.2 \cdot \log \left( \frac{1}{0.2} \right))
+$$</p>
+<p>This would result in a lower entropy, reflecting less uncertainty because the outcome is more predictable.</p>
+<p>In summary, entropy represents the <strong>average surprise</strong> or uncertainty of a system. A fair coin flip has higher entropy (more unpredictability) than a biased coin flip.</p>
+<h3 id="key-insights">
+  Key Insights:
+  <a class="heading-link" href="#key-insights">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Entropy is the <strong>expected surprise</strong>, measuring the uncertainty or unpredictability of a process.</li>
+<li>Higher entropy implies more uncertainty, while lower entropy implies more predictable outcomes.</li>
+</ol>
 
       </div>
 
