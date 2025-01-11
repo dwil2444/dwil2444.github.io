@@ -1,111 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-
-    
-
-    
-    <meta name="description" content="Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes&rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
-$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
-Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:">
-    <meta name="keywords" content="">
-
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bayesian Inference"/>
-<meta name="twitter:description" content="Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes&rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
-$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
-Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:"/>
-
-    <meta property="og:title" content="Bayesian Inference" />
-<meta property="og:description" content="Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes&rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
-$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
-Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://dwil2444.github.io/posts/bp/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-05-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-05-05T00:00:00+00:00" />
-
-
-    <title>
+<head>
+  <title>
   Bayesian Inference · home
 </title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-      <link rel="canonical" href="https://dwil2444.github.io/posts/bp/">
-    
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
-    
 
-    
+<meta name="description" content="Bayesian Inference 
+Bayesian Inference is an approach to statistical inference which utilises Bayes&rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
+$$
+p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)}
+$$
+Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:">
+<meta name="keywords" content="">
 
-    
 
-    
 
-    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bayesian Inference">
+  <meta name="twitter:description" content="Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes’ theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
+$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
+Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:">
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<meta property="og:url" content="https://dwil2444.github.io/posts/bp/">
+  <meta property="og:site_name" content="home">
+  <meta property="og:title" content="Bayesian Inference">
+  <meta property="og:description" content="Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes’ theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
+$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
+Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-05-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-05-05T00:00:00+00:00">
 
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    <meta name="generator" content="Hugo 0.110.0">
-  </head>
+
+
+<link rel="canonical" href="https://dwil2444.github.io/posts/bp/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
 
   
   
-  <body class="preload-transitions colorscheme-light">
-    
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    
+    <a class="navigation-title" href="https://dwil2444.github.io/">
       home
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about">About</a>
+              <a class="navigation-link " href="/about">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/publications">Publications</a>
+              <a class="navigation-link " href="/publications">Publications</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/teaching">Teaching</a>
+              <a class="navigation-link " href="/teaching">Teaching</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts">Blog</a>
+              <a class="navigation-link " href="/posts">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/cv.pdf">CV</a>
+              <a class="navigation-link " href="/cv.pdf">CV</a>
             </li>
           
         
@@ -116,8 +143,8 @@ Simple right? Perhaps not so much to the unitiated to whom this equation may see
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -131,13 +158,13 @@ Simple right? Perhaps not so much to the unitiated to whom this equation may see
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2022-05-05T00:00:00Z">
                 May 5, 2022
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               3-minute read
             </span>
           </div>
@@ -147,7 +174,7 @@ Simple right? Perhaps not so much to the unitiated to whom this equation may see
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <h1 align="center">Bayesian Inference </h1>
 <p><strong>Bayesian Inference</strong> is an approach to statistical inference which utilises Bayes&rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:</p>
@@ -158,7 +185,8 @@ $$</p>
 <h5 id="key-terms">
   Key Terms
   <a class="heading-link" href="#key-terms">
-    <i class="fa fa-link" aria-hidden="true"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
   </a>
 </h5>
 <ul>
@@ -176,11 +204,11 @@ The <strong>prior</strong> is the estimate of the probability of the hypothesis 
 </li>
 <li>
 <p><u> P(x $\mid$ z) $\rightarrow$ Likelihood:</u><br />
-The likelihood is the <a href="https://en.wikipedia.org/wiki/Conditional_probability">conditional probability</a> of observing the evidence <strong>x</strong> given the hypothesis <strong>z</strong>.</p>
+The likelihood is the <a href="https://en.wikipedia.org/wiki/Conditional_probability"  class="external-link" target="_blank" rel="noopener">conditional probability</a> of observing the evidence <strong>x</strong> given the hypothesis <strong>z</strong>.</p>
 </li>
 <li>
 <p><u> P(x) $\rightarrow$ Marginal Likelihood / &ldquo;Model Evidence&rdquo;:</u><br />
-This gives the <a href="https://en.wikipedia.org/wiki/Marginal_distribution">marginal distribution</a> of the evidence, i.e. the probability of the evidence without any hypotheses being considered. As this would be the same for all hypotheses, it does not factor into determining relevant probabilities of different hypotheses. The marginal distribution of a variable that is jointly distributed is the probability distribution of that variable when the values of the other variable are not considered. This is essentially a summaton over the joint probability distribution over all values of the other variable. The converse is also true:<br />
+This gives the <a href="https://en.wikipedia.org/wiki/Marginal_distribution"  class="external-link" target="_blank" rel="noopener">marginal distribution</a> of the evidence, i.e. the probability of the evidence without any hypotheses being considered. As this would be the same for all hypotheses, it does not factor into determining relevant probabilities of different hypotheses. The marginal distribution of a variable that is jointly distributed is the probability distribution of that variable when the values of the other variable are not considered. This is essentially a summaton over the joint probability distribution over all values of the other variable. The converse is also true:<br />
 $$ p_{X} ( x_{i} ) = \sum\limits_{j} p(x_{i} , y_{j}) $$
 $$ p_{Y} ( y_{j} ) = \sum\limits_{i} p(x_{i} , y_{j}) $$</p>
 </li>
@@ -192,10 +220,11 @@ The <strong>posterior</strong> is the conditional probability of a hypothesis z 
 <h4 id="summary">
   Summary
   <a class="heading-link" href="#summary">
-    <i class="fa fa-link" aria-hidden="true"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
   </a>
 </h4>
-<p>Bayesian Inference has many applications in science and engineering, especially in the field of <a href="https://en.wikipedia.org/wiki/Deep_learning">Deep Learning</a>. Inference is particularly useful in <a href="https://en.wikipedia.org/wiki/Generative_model">Generative models</a> such as <a href="https://en.wikipedia.org/wiki/Variational_autoencoder">Variational Autoencoders</a>, where we seek the likelihood of a data point <strong>x</strong> conditioned on a latent representation <strong>z</strong>. First we must use Variational Inference to approximate the underlying distribution of our data given our input, $p(z \mid x)$, we can then sample a latent representation, <strong>z</strong> from our approximation of the distribution and then generate data points by conditioning the probability of our data point, <strong>x</strong> on the sampled latent representation, $p (x \mid z)$. This all seems very abstract for now however, this page only serves as a warmup and reference page as we explore concepts in variational inference in future blog posts.</p>
+<p>Bayesian Inference has many applications in science and engineering, especially in the field of <a href="https://en.wikipedia.org/wiki/Deep_learning"  class="external-link" target="_blank" rel="noopener">Deep Learning</a>. Inference is particularly useful in <a href="https://en.wikipedia.org/wiki/Generative_model"  class="external-link" target="_blank" rel="noopener">Generative models</a> such as <a href="https://en.wikipedia.org/wiki/Variational_autoencoder"  class="external-link" target="_blank" rel="noopener">Variational Autoencoders</a>, where we seek the likelihood of a data point <strong>x</strong> conditioned on a latent representation <strong>z</strong>. First we must use Variational Inference to approximate the underlying distribution of our data given our input, $p(z \mid x)$, we can then sample a latent representation, <strong>z</strong> from our approximation of the distribution and then generate data points by conditioning the probability of our data point, <strong>x</strong> on the sampled latent representation, $p (x \mid z)$. This all seems very abstract for now however, this page only serves as a warmup and reference page as we explore concepts in variational inference in future blog posts.</p>
 
       </div>
 
@@ -205,8 +234,8 @@ The <strong>posterior</strong> is the conditional probability of a hypothesis z 
 
 
         <div id="disqus_thread"></div>
-<script type="application/javascript">
-    window.disqus_config = function () {
+<script>
+  window.disqus_config = function () {
     
     
     
@@ -221,21 +250,29 @@ The <strong>posterior</strong> is the conditional probability of a hypothesis z 
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+        
+        
         
         
       </footer>
     </article>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
   
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
-    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
     onload="renderMathInElement(document.body,
       {
         delimiters: [
@@ -248,43 +285,68 @@ The <strong>posterior</strong> is the conditional probability of a hypothesis z 
     );"></script>
   </section>
 
-      </div>
+    </div>
 
-      <footer class="footer">
+    <footer class="footer">
   <section class="container">
     ©
     
-    2023
+    2025
     
     ·
     
-    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
 
-    </main>
+  </main>
 
-    
-      
-      <script src="/js/coder.min.9cf2dbf9b6989ef8eae941ffb4231c26d1dc026bca38f1d19fdba50177d8a9ac.js" integrity="sha256-nPLb&#43;baYnvjq6UH/tCMcJtHcAmvKOPHRn9ulAXfYqaw="></script>
-    
+  
 
-    
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
 
-    
+  
 
-    
+  
 
-    
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>

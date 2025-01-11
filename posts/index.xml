@@ -4,58 +4,45 @@
     <title>Blog Posts on home</title>
     <link>https://dwil2444.github.io/posts/</link>
     <description>Recent content in Blog Posts on home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© 2022 by Dane Williamson. &lt;a href=&#39;https://dwil2444.github.io/privacy&#39;&gt;Privacy policy&lt;/a&gt;.</copyright>
-    <lastBuildDate>Fri, 06 May 2022 17:09:11 -0400</lastBuildDate><atom:link href="https://dwil2444.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 by Dane Williamson. &lt;a href=&#39;https://dwil2444.github.io/privacy&#39;&gt;Privacy policy&lt;/a&gt;.</copyright>
+    <lastBuildDate>Fri, 10 Feb 2023 21:05:22 -0500</lastBuildDate>
+    <atom:link href="https://dwil2444.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Information Theory</title>
       <link>https://dwil2444.github.io/posts/it/</link>
       <pubDate>Fri, 10 Feb 2023 21:05:22 -0500</pubDate>
-      
       <guid>https://dwil2444.github.io/posts/it/</guid>
-      <description>Brief Notes on Information Theory Surprise: Given a stochastic process which generates data $x$, the surprise associated with each datapoint is the reciprocal of its probability: $$ s(x) = \frac{1}{p(x)}; $$. The lower the probability of an observation, the more &amp;ldquo;surprised&amp;rdquo; we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function: $$ s(x) = \log ( \frac{1}{p(x)} )$$ $$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) + \log ( \frac{1}{p(y)} )= s(x) + s(y) $$ Average Surprise: Each observation has an associated probability.</description>
+      <description>&lt;h1 align=&#34;center&#34;&gt;Brief Notes on Information Theory &lt;/h1&gt;&#xA;&lt;h3 id=&#34;surprise&#34;&gt;&#xA;  Surprise:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#surprise&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Given a stochastic process which generates data $x$, the &lt;strong&gt;surprise&lt;/strong&gt; associated with each datapoint is the reciprocal of its probability:&#xA;$$ s(x) = \frac{1}{p(x)}; $$.&lt;/li&gt;&#xA;&lt;li&gt;The lower the probability of an observation, the more &amp;ldquo;surprised&amp;rdquo; we are at seeing it. To capture the surprise of multiple independent events, we make use of the logarithm function:&#xA;$$ s(x) = \log ( \frac{1}{p(x)} )$$&#xA;$$ s(xy) = \log ( \frac{1}{p(x) \cdot p(y)} ) = \log ( \frac{1}{p(x)} ) + \log ( \frac{1}{p(y)} )= s(x) + s(y)  $$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;average-surprise&#34;&gt;&#xA;  Average Surprise:&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#average-surprise&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Each observation has an associated probability. To get the amount of information produced by a series of inputs, we can take the &lt;strong&gt;expected value:&lt;/strong&gt;.&#xA;&lt;strong&gt;N.B.&lt;/strong&gt; The &lt;strong&gt;Expected Surprise&lt;/strong&gt; is the surprise for each outcome weighted by its probability:&#xA;$$ H = p_{1} \log (\frac{1}{p_{1}}) + p_{2} \log (\frac{1}{p_{2}})  + &amp;hellip; + p_{n} \log (\frac{1}{p_{n}})$$&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Variational Autoencoders</title>
       <link>https://dwil2444.github.io/posts/vae/</link>
       <pubDate>Tue, 10 May 2022 15:10:15 -0400</pubDate>
-      
       <guid>https://dwil2444.github.io/posts/vae/</guid>
-      <description> Inference Generation ELBO Reparameterizatio Trick </description>
+      <description>&lt;h4 id=&#34;inference&#34;&gt;&#xA;  Inference&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#inference&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;generation&#34;&gt;&#xA;  Generation&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#generation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;elbo&#34;&gt;&#xA;  ELBO&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#elbo&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;h4 id=&#34;reparameterizatio-trick&#34;&gt;&#xA;  Reparameterizatio Trick&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#reparameterizatio-trick&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;</description>
     </item>
-    
     <item>
       <title>Maximum Likelihood Estimation</title>
       <link>https://dwil2444.github.io/posts/mle/</link>
       <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://dwil2444.github.io/posts/mle/</guid>
-      <description>Maximum Likelihood Estimation Likelihood Likelihood describes the joint probability of observed data, y as a function of the parameters, $\theta$ of a statistical model. The likelihood is NOT a probability density function of the parameters. An intuitive way to consider the likelihood is as equal to the probability density of the outcome, y when the true value of the parameter is $\theta$.
-$\mathcal{L}$ is a probability density over y NOT $\theta$.</description>
+      <description>&lt;h1 align=&#34;center&#34;&gt;Maximum Likelihood Estimation &lt;/h1&gt;&#xA;&lt;h5 id=&#34;likelihood&#34;&gt;&#xA;  Likelihood&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#likelihood&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h5&gt;&#xA;&lt;p&gt;&lt;strong&gt;Likelihood&lt;/strong&gt; describes the joint probability of observed data, &lt;strong&gt;y&lt;/strong&gt; as a function of the parameters, &lt;strong&gt;$\theta$&lt;/strong&gt; of a statistical model. The likelihood is &lt;strong&gt;NOT&lt;/strong&gt; a &lt;a href=&#34;https://en.wikipedia.org/wiki/Probability_density_function&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;probability density function&lt;/a&gt; of &lt;strong&gt;the parameters&lt;/strong&gt;. An intuitive way to consider the likelihood is as equal to the probability density of the outcome, &lt;strong&gt;y&lt;/strong&gt; when the true value of the parameter is &lt;strong&gt;$\theta$&lt;/strong&gt;.&lt;br /&gt;&#xA;&lt;strong&gt;$\mathcal{L}$ is a probability density over y NOT $\theta$.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bayesian Inference</title>
       <link>https://dwil2444.github.io/posts/bp/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://dwil2444.github.io/posts/bp/</guid>
-      <description>Bayesian Inference Bayesian Inference is an approach to statistical inference which utilises Bayes&amp;rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:
-$$ p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)} $$
-Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:</description>
+      <description>&lt;h1 align=&#34;center&#34;&gt;Bayesian Inference &lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bayesian Inference&lt;/strong&gt; is an approach to statistical inference which utilises Bayes&amp;rsquo; theorem to provide updates for the probability of an outcome as new information becomes available. The mathematical formulation for Bayes theorem is quite ubiquituous and no doubt you have seen it before, however it is stated here for completeness:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;p (z \mid x) = \frac{p(x \mid z) \cdot p(z)}{p(x)}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Simple right? Perhaps not so much to the unitiated to whom this equation may seem very strange and as such here is a breakdown of what these terms actually mean:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Variational Inference</title>
       <link>https://dwil2444.github.io/posts/vi/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://dwil2444.github.io/posts/vi/</guid>
-      <description>What is Variational Inference? Variational Inference is a technique used in Bayesian Statistics to approximate $p ( z \mid x)$ the conditional density of an unknown variable, z given an observed variable, x through optimization. To find this approximate density:
-select a family of densities, $\mathscr{D}$ over the latent variables. Each member of the family q(z) $\in \mathscr{D}$ is a candidate approximation to the true density. The optimization problem is then to find the member of this family which is closest in Kullback-Leibler (KL) divergence to the conditional density of interest: $$ q^{*} (z) = \underset{q(z) \in \mathscr{D}}{\text{arg min}} \quad \text{KL} (q(z) \mid \mid p(z \mid x)) $$ Kullback-Leibler Divergence The divergence between two probability distributions is a statistical distance or scoring of how the distributions differ from each other.</description>
+      <description>&lt;h1 align=&#34;center&#34;&gt;What is Variational Inference? &lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Variational Inference&lt;/strong&gt; is a technique used in Bayesian Statistics to approximate &lt;strong&gt;$p ( z \mid x)$&lt;/strong&gt; the conditional density of an unknown variable, &lt;strong&gt;z&lt;/strong&gt; given an observed variable, &lt;strong&gt;x&lt;/strong&gt; through optimization. To find this approximate density:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;select a family of densities, $\mathscr{D}$ over the latent variables. Each member of the family q(z) $\in \mathscr{D}$ is a candidate approximation to the true density.&lt;/li&gt;&#xA;&lt;li&gt;The optimization problem is then to find the member of this family which is closest in &lt;strong&gt;Kullback-Leibler (KL) divergence&lt;/strong&gt; to the conditional density of interest:&#xA;$$&#xA;q^{*} (z) = \underset{q(z) \in \mathscr{D}}{\text{arg min}} \quad \text{KL} (q(z) \mid \mid p(z \mid x))&#xA;$$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;kullback-leibler-divergence&#34;&gt;&#xA;  Kullback-Leibler Divergence&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#kullback-leibler-divergence&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;The &lt;strong&gt;divergence&lt;/strong&gt; between two probability distributions is a statistical distance or scoring of how the distributions differ from each other. The &lt;strong&gt;Kullback-Leibler Divergence&lt;/strong&gt;: D$_{KL} (P \mid \mid Q)$ &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is also known as &lt;strong&gt;relative entropy&lt;/strong&gt; and intuitively it is considered as the expected &lt;strong&gt;surprise&lt;/strong&gt; from using Q as a model when the true distribution is P..&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
