@@ -2,7 +2,7 @@
 # Global options
 baseURL = "https://dwil2444.github.io/"
 canonifyURLs = false
-copyright = "© 2022 by Dane Williamson. <a href='/privacy'>Privacy policy</a>."
+copyright = "© 2025 by Dane Williamson. <a href='/privacy'>Privacy policy</a>."
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy", "term"]
 languageCode = "en"
