@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog Posts on home</title>
-    <link>https://dwil2444.github.io/posts/</link>
-    <description>Recent content in Blog Posts on home</description>
+    <title>Statistics Review on home</title>
+    <link>https://dwil2444.github.io/posts/stats/</link>
+    <description>Recent content in Statistics Review on home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 by Dane Williamson. &lt;a href=&#39;https://dwil2444.github.io/privacy&#39;&gt;Privacy policy&lt;/a&gt;.</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://dwil2444.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dwil2444.github.io/posts/stats/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

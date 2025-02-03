@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  What is Logistic Regression? · home
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="description" content="What is Logistic Regression? 
+Logistic Regression is a statistical method used for binary classification tasks where the goal is to predict a binary outcome (1 or 0, True or False). It is one of the
+simplest algorithms in Machine Learning, but it is also one of the most widely used for problems like spam detection, disease diagnosis and customer churn prediction.
+
+  Definition
+  
+    
+    Link to heading
+  
+
+Logistic regression models the probability of a binary outcome as a function of independent variables (covariates). Unlike linear regression, which is used for predicting
+continuous outcomes, logistic regression is used when the outcome is categorical.
+The model&rsquo;s output is transformed by a logistic function (the sigmoid function), which ensures that the predicted values lies between 0 and 1, and is therefore a valid probability score:">
+<meta name="keywords" content="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="What is Logistic Regression?">
+  <meta name="twitter:description" content="What is Logistic Regression? Logistic Regression is a statistical method used for binary classification tasks where the goal is to predict a binary outcome (1 or 0, True or False). It is one of the simplest algorithms in Machine Learning, but it is also one of the most widely used for problems like spam detection, disease diagnosis and customer churn prediction.
+Definition Link to heading Logistic regression models the probability of a binary outcome as a function of independent variables (covariates). Unlike linear regression, which is used for predicting continuous outcomes, logistic regression is used when the outcome is categorical.
+The model’s output is transformed by a logistic function (the sigmoid function), which ensures that the predicted values lies between 0 and 1, and is therefore a valid probability score:">
+
+<meta property="og:url" content="https://dwil2444.github.io/posts/ml/regression/definition/">
+  <meta property="og:site_name" content="home">
+  <meta property="og:title" content="What is Logistic Regression?">
+  <meta property="og:description" content="What is Logistic Regression? Logistic Regression is a statistical method used for binary classification tasks where the goal is to predict a binary outcome (1 or 0, True or False). It is one of the simplest algorithms in Machine Learning, but it is also one of the most widely used for problems like spam detection, disease diagnosis and customer churn prediction.
+Definition Link to heading Logistic regression models the probability of a binary outcome as a function of independent variables (covariates). Unlike linear regression, which is used for predicting continuous outcomes, logistic regression is used when the outcome is categorical.
+The model’s output is transformed by a logistic function (the sigmoid function), which ensures that the predicted values lies between 0 and 1, and is therefore a valid probability score:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-03T16:28:24-05:00">
+    <meta property="article:modified_time" content="2025-02-03T16:28:24-05:00">
+
+
+
+
+<link rel="canonical" href="https://dwil2444.github.io/posts/ml/regression/definition/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://dwil2444.github.io/">
+      home
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/teaching">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cv.pdf">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://dwil2444.github.io/posts/ml/regression/definition/">
+              What is Logistic Regression?
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-02-03T16:28:24-05:00">
+                February 3, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 align="center">What is Logistic Regression? </h1>
+<p>Logistic Regression is a statistical method used for binary classification tasks where the goal is to predict a binary outcome (1 or 0, True or False). It is one of the
+simplest algorithms in Machine Learning, but it is also one of the most widely used for problems like spam detection, disease diagnosis and customer churn prediction.</p>
+<h4 id="definition">
+  Definition
+  <a class="heading-link" href="#definition">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Logistic regression models the probability of a binary outcome as a function of independent variables (covariates). Unlike linear regression, which is used for predicting
+continuous outcomes, logistic regression is used when the outcome is categorical.<br />
+The model&rsquo;s output is transformed by a logistic function (the sigmoid function), which ensures that the predicted values lies between 0 and 1, and is therefore a valid probability score:</p>
+<p>$$
+P (y = 1 \mid X) = \frac{1}{1+e^{-z}} , \text{where} , ,  z = \beta_{0} + \beta_{1} X_{1} + \ldots + \beta_{n} X_{n}
+$$</p>
+<p>Where:</p>
+<ul>
+<li>z is the linear combination of input variables</li>
+<li>$\beta$ is the intercept, and $\Beta_{1}, \ldots \beta_{n}$ are the coefficietns of the features $X_{1} \ldots , X_{n}$.</li>
+</ul>
+<h5 id="coefficients">
+  Coefficients
+  <a class="heading-link" href="#coefficients">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<p>In logistic regression, the coefficients (or weights) represent the effect of each predictor (covariate) on the outcome. Each coefficient tells you how much the log-oddss
+of the outcome (i.e. the probability of y = 1) change when the corresponding predictor increases by one unit.<br />
+A <strong>positive coefficient</strong> indicates that the predictor increases the likelihood of the outcome. Conversely, a <strong>negative coefficient</strong> indicates that the predictor decreases
+the likelihood of the outcome. The <strong>magnitude</strong> of the coefficient reflects the strength of the relationship. Assessing the statistical significance of each coefficient helps
+determine the relevance of each predictor in the model.</p>
+<h5 id="when-to-use-it">
+  When to Use It
+  <a class="heading-link" href="#when-to-use-it">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<p>Logistic Regression is suitable when:</p>
+<ul>
+<li>The dependent variable is binary (e.g. Yes/No, 1/0)</li>
+<li>A probabilistic interpretation of predictions is required</li>
+<li>The relationship between independent variables and the log-odds of the outcome is approximately linear.</li>
+<li>Data does not exhibit severe multicollinearity within predictors.</li>
+</ul>
+<p>Some concrete real world examples include:</p>
+<ul>
+<li>Medical Diagnosis</li>
+<li>Email Classification</li>
+<li>Customer Churn Prediction</li>
+</ul>
+<h4 id="assessing-the-validity-of-covariates">
+  Assessing the Validity of Covariates
+  <a class="heading-link" href="#assessing-the-validity-of-covariates">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>When performing logistic regression, it is crucial to assess the relevance and validity of each covariate (predictor variable). Some ways to evaluate covariates include:</p>
+<ol>
+<li><strong>Correlation Analysis:</strong> Check for multicollinearity between independent variables using correlation matrices or Variance Inflation Factor. High multicollinearity
+can inflate coefficients and destabilize the model.</li>
+<li><strong>P-Values and Confidence Intervals:</strong> Ater fitting the model, review the p-values and confidence intervals for each covariate. A small p-value (typically $&lt; 0.05$) suggests
+the variable significantly contributes to predicting the outcome. If a covariate&rsquo;s confidence interval does not cross zero - it is likely relevant.</li>
+<li><strong>Feature Importance:</strong> Ues techniques like regularization (Ridge or Lasso), or tree-based methods to estimate the importance of each feature in predicting the outcome.</li>
+<li><strong>Domain Knowledge:</strong> Incorporate dowwmin knowledge to judge relevance of covariates.</li>
+</ol>
+<h4 id="optimizing-and-fine-tuning-logistic-regression">
+  Optimizing and Fine-Tuning Logistic Regression
+  <a class="heading-link" href="#optimizing-and-fine-tuning-logistic-regression">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>To improve performance, we fine-tune hyperparameters and apply regularization to prevent overfitting. Two common regularization techniques are <strong>L1 (Lasso)</strong> and
+<strong>L2 (Ridge)</strong> Regularization.</p>
+<ul>
+<li><strong>L1 Regularization:</strong> Also known as Least Absolute Shrinkage and Selection Operator (LASSO), adds a penalty equal to the absolute value of the coefficients:</li>
+</ul>
+<p>$$
+J (\beta) = \sum_{i=1}^{n} \log L (\beta) + \lambda \sum_{j=1}^{p} | B_{j} |
+$$</p>
+<p>where:</p>
+<ul>
+<li>$J (\beta)$ is the cost function</li>
+<li>$\log L(\beta)$ is the log-likelihood of the logistic regression model</li>
+<li>$\lambda$ is the regularization strength (higher values incresase the penalty)</li>
+<li>$| \beta_{j} |$ is the absolute value of each coefficient.</li>
+</ul>
+<p>Lasso Regularization encourages sparsity by forcing some coefficients to become exactly zero, effectively performing feature selection. It is useful for dealing with high-dimensional data where only a few features are important.</p>
+<ul>
+<li><strong>L2 Regularization:</strong> also known as <strong>Ridge Regression</strong> adds a penalty proportional to the squared magnitude
+of the coefficients:</li>
+</ul>
+<p>$$
+J (\beta) = \sum_{i=1}^{n} \log L (\beta) + \lambda \sum_{j=1}^{p} \beta^2_{j}
+$$</p>
+<p><strong>Note:</strong> Logistic regression assumes that the relationship between the predictors and the log-odds of the outcome is linear. Non-linear relationships might require alternative algorithms like decision trees or neural networks.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mlbytes" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+    
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

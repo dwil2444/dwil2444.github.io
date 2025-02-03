@@ -3,18 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dwil2444.github.io/</loc>
-    <lastmod>2023-02-10T21:05:22-05:00</lastmod>
+    <lastmod>2025-02-03T17:07:50-05:00</lastmod>
   </url><url>
-    <loc>https://dwil2444.github.io/posts/entropy/</loc>
-    <lastmod>2023-02-10T21:05:22-05:00</lastmod>
+    <loc>https://dwil2444.github.io/posts/stats/general/ci/</loc>
+    <lastmod>2025-02-03T17:00:33-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/ml/regression/definition/</loc>
+    <lastmod>2025-02-03T16:28:24-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/ml/</loc>
+    <lastmod>2025-02-03T16:27:29-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/it/</loc>
+    <lastmod>2025-02-03T16:21:27-05:00</lastmod>
   </url><url>
     <loc>https://dwil2444.github.io/posts/vae/</loc>
+    <lastmod>2025-02-03T16:14:06-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/stats/</loc>
+    <lastmod>2025-02-03T16:12:54-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/it/entropy/</loc>
+    <lastmod>2023-02-10T21:05:22-05:00</lastmod>
+  </url><url>
+    <loc>https://dwil2444.github.io/posts/vae/vae/</loc>
     <lastmod>2022-05-10T15:10:15-04:00</lastmod>
   </url><url>
     <loc>https://dwil2444.github.io/posts/paper-reviews/</loc>
     <lastmod>2022-05-10T14:48:57-04:00</lastmod>
   </url><url>
-    <loc>https://dwil2444.github.io/posts/mle/</loc>
+    <loc>https://dwil2444.github.io/posts/stats/general/mle/</loc>
     <lastmod>2022-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dwil2444.github.io/posts/</loc>
@@ -23,10 +41,10 @@
     <loc>https://dwil2444.github.io/teaching/</loc>
     <lastmod>2022-05-05T13:23:50-04:00</lastmod>
   </url><url>
-    <loc>https://dwil2444.github.io/posts/bp/</loc>
+    <loc>https://dwil2444.github.io/posts/stats/general/bp/</loc>
     <lastmod>2022-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dwil2444.github.io/posts/vi/</loc>
+    <loc>https://dwil2444.github.io/posts/vae/vi/</loc>
     <lastmod>2022-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dwil2444.github.io/about/</loc>
