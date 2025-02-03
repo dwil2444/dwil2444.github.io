@@ -5,4 +5,9 @@ title : "Blog Posts"
 ---
 
 
-This is where I store my notes.
+#### This is where I store my notes.
+
+- [Machine Learning](/posts/ml/)
+- [Statistics](/posts/stats/)
+- [Information Theory](/posts/it/)
+- [Variational AutoEncoders](/posts/vae/)
