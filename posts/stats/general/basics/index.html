@@ -24,7 +24,7 @@ Probability is the branch of mathematics that deals with the chance of events oc
 data patterns, making predictions, and modeling uncertain events. In this post, we explore key concepts of probability,
 including basic rules, Bayes&rsquo; Theorem, random variables, probability distributions and more.
 
-  1 Basic Probablity Rules
+  1. Basic Probablity Rules
   
     
     Link to heading
@@ -41,13 +41,13 @@ The probability of an event, A denoted as P(A), is a measure of the likelihood t
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Basic Probability Review">
   <meta name="twitter:description" content="Probability Fundamentals Introduction Link to heading Probability is the branch of mathematics that deals with the chance of events occuring. It is essential for understanding data patterns, making predictions, and modeling uncertain events. In this post, we explore key concepts of probability, including basic rules, Bayes’ Theorem, random variables, probability distributions and more.
-1 Basic Probablity Rules Link to heading Probability of an Event: The probability of an event, A denoted as P(A), is a measure of the likelihood that event A will occur. The value of $P(A) \in ( 0, 1 ) $, where:">
+1. Basic Probablity Rules Link to heading Probability of an Event: The probability of an event, A denoted as P(A), is a measure of the likelihood that event A will occur. The value of $P(A) \in ( 0, 1 ) $, where:">
 
 <meta property="og:url" content="https://dwil2444.github.io/posts/stats/general/basics/">
   <meta property="og:site_name" content="home">
   <meta property="og:title" content="Basic Probability Review">
   <meta property="og:description" content="Probability Fundamentals Introduction Link to heading Probability is the branch of mathematics that deals with the chance of events occuring. It is essential for understanding data patterns, making predictions, and modeling uncertain events. In this post, we explore key concepts of probability, including basic rules, Bayes’ Theorem, random variables, probability distributions and more.
-1 Basic Probablity Rules Link to heading Probability of an Event: The probability of an event, A denoted as P(A), is a measure of the likelihood that event A will occur. The value of $P(A) \in ( 0, 1 ) $, where:">
+1. Basic Probablity Rules Link to heading Probability of an Event: The probability of an event, A denoted as P(A), is a measure of the likelihood that event A will occur. The value of $P(A) \in ( 0, 1 ) $, where:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -179,7 +179,7 @@ The probability of an event, A denoted as P(A), is a measure of the likelihood t
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              One-minute read
+              4-minute read
             </span>
           </div>
           
@@ -202,7 +202,7 @@ The probability of an event, A denoted as P(A), is a measure of the likelihood t
 data patterns, making predictions, and modeling uncertain events. In this post, we explore key concepts of probability,
 including basic rules, Bayes&rsquo; Theorem, random variables, probability distributions and more.</p>
 <h4 id="1-basic-probablity-rules">
-  1 Basic Probablity Rules
+  1. Basic Probablity Rules
   <a class="heading-link" href="#1-basic-probablity-rules">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
@@ -223,13 +223,166 @@ including basic rules, Bayes&rsquo; Theorem, random variables, probability distr
     <span class="sr-only">Link to heading</span>
   </a>
 </h5>
+<p>The addition rule is used to find the probabiltiy of the Union of two events. For two events A and B, the probability
+that either A or B occurs is :</p>
+<p>$$
+P( A \cup B) = P(A) + P(B) - P (A \cap B)
+$$</p>
+<p>This rule adjusts for the possibility that both events might occur at the same time (i.e., the intersection)</p>
 <h5 id="multiplication-rule">
-  Multiplication Rule
+  Multiplication Rule:
   <a class="heading-link" href="#multiplication-rule">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h5>
+<p>The multiplication rule gives the probability that two events A and B occur together, (i.e, the interesection of two events). If A and B are independent the rule simplifies to:</p>
+<p>$$
+P(A \cap B)  = P(A) \cdot P(B)
+$$</p>
+<p>If the events are dependent, the formula becomes:</p>
+<p>$$
+P(A \cap B) = P(A) \cdot P(B \mid A)
+$$</p>
+<p>where $P(B \mid A)$ is the conditional probability of event B occuriing given that A has occurred.</p>
+<h4 id="2-conditional-probability">
+  2. Conditional Probability
+  <a class="heading-link" href="#2-conditional-probability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The conditional probability is the probability of an event occuring given that another event has already occurred.
+It is denoted as $P( A \mid B)$, the probability of A given B. The formula for conditional probability is:</p>
+<p>$$
+P(A \mid B) = \frac{ P(A \cap B)}{P (B)}
+$$</p>
+<p>Where:</p>
+<ul>
+<li>$P( A \mid B)$ is the probability of event A occuring given that B has occurred.</li>
+<li>$P(A \cap B)$ is the probability of both A and B occuring.</li>
+<li>$P(B)$ is the probability of event B.</li>
+</ul>
+<h4 id="3-bayes-theorem">
+  3. Bayes&rsquo; Theorem
+  <a class="heading-link" href="#3-bayes-theorem">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Bayes theorem is a powerful tool in probability theory for updating belieffs based on new evidence. It is especially
+useful in machine learning and decision-making processes.<br />
+The formula for Bayes&rsquo; Theorem is:</p>
+<p>$$
+P A( \mid B) = \frac{P (B \mid A) \cdot P(A)}{P(B)}
+$$</p>
+<p>where:</p>
+<ul>
+<li>$P(A \mid B)$ is the posterior probability (probability of A given B)</li>
+<li>$P(B \mid A)$ is the likelihood (probability of B given A)</li>
+<li>$P(A)$ is the prior probability (probability of A)</li>
+<li>$P(B)$ is the evidence (probability of B)</li>
+</ul>
+<h4 id="4-random-variables">
+  4. Random Variables
+  <a class="heading-link" href="#4-random-variables">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>A random variable takes on different values based on the outcome of a random event. There are two main types:</p>
+<ul>
+<li>Discrete Random Variables: Take on countable values (e.g. number of heads when flipping a coin)</li>
+<li>Continuous Random Variables: Take on any value within a range (e.g. height, weight)</li>
+</ul>
+<h5 id="expected-value-mean">
+  Expected Value (Mean):
+  <a class="heading-link" href="#expected-value-mean">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<p>The expected value of a random variable, $X$ is the long-term average value of $X$ if the experiment
+were repeated many times. It is denonted as $\mathbb{E} (X)$ and calculated as:</p>
+<p>For discrete variables:
+$$
+\mathbb{E}(x) = \sum x \cdot P(x)
+$$</p>
+<p>For continuous variables:</p>
+<p>$$
+\mathbb{E}(x) = \int x \cdot f(x) dx
+$$</p>
+<p>Where $f(x)$ is the probability density function.</p>
+<h4 id="5-common-probability-distributions">
+  5. Common Probability Distributions:
+  <a class="heading-link" href="#5-common-probability-distributions">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<h6 id="bernoulli-distribution">
+  Bernoulli Distribution:
+  <a class="heading-link" href="#bernoulli-distribution">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>The Bernoulli Distribution models a single trial with two possible outucomes, typically &ldquo;success&rdquo; or &ldquo;failure&rdquo;.
+It is represented by a random variable $X$, where:</p>
+<ul>
+<li>
+<p>$P(X=1)$ = $p (\text{success})$</p>
+</li>
+<li>
+<p>$P(X=0)$ = $1 - p (\text{failure})$</p>
+</li>
+</ul>
+<h6 id="binomial-distribution">
+  Binomial Distribution:
+  <a class="heading-link" href="#binomial-distribution">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>The Binomial Distribution models the number of successes in a fixed number of independent Bernoulli trials. For n trials
+and success probability, $p$, the probability of exactly $k$ successes is:</p>
+<p>$$
+P (X=k) = \binom{n}{k} p^{k} (1-p)^{n-k}
+$$</p>
+<h6 id="normal-distribution">
+  Normal Distribution:
+  <a class="heading-link" href="#normal-distribution">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<p>The Normal Distribution, also known as the Gaussian Distribution, is a continuous probability distribution that is
+symmetric around the mean. It is used in natural phenomena and machine learning applications. The Probability Density Function (pdf) of a normal distribution is:</p>
+<p>$$
+f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}}
+$$</p>
+<p>where $\mu$ is the mean and $\sigma$ is the variance.</p>
+<h4 id="6-law-of-total-probability">
+  6. Law of Total Probability:
+  <a class="heading-link" href="#6-law-of-total-probability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The law of total probability states that the total probability of an event can be found by conditioning on
+all possible eventss in a partition of the sample space.</p>
+<p>For an event A and a partition of the sample space ${ B_1, B_2, \ldots, B_n }$, the law of total probability is:</p>
+<p>$$
+P(A) = \sum_{i} P(A \mid B_{i}) \cdot P(B_i)
+$$</p>
+<h4 id="conclusion">
+  Conclusion:
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Understanding the fundamentals of probability is essential for analyzing uncertainty and making informed decisions in data science, machine learning, and beyond. By mastering the basic rules, distributions, and key concepts like Bayes&rsquo; Theorem, you’ll be better equipped to tackle real-world problems that involve uncertainty and randomness.</p>
 
       </div>
 
