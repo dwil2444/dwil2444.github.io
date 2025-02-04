@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+   · home
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="description" content=" Hypothesis Testing: An Overview 
+Hypothesis Testing is a fundamental statistical method used to make inferences or draw conclusions about a population
+based on sample data. It is commonly used to test if a claim about a population is supported by data or if the observed effect is
+statistically significant.
+
+  Key Concepts in Hypothesis Testing
+  
+    
+    Link to heading
+  
+
+
+
+  1. Null Hypothesis $H_0$ and Alternative Hypothesis ($H_1$)
+  
+    
+    Link to heading
+  
+
+
+
+Null Hypothesis ($H_0$): A statement or assumption about the population that we seek to test. It is typically a statement of &ldquo;no effect&rdquo; or &ldquo;no difference&rdquo;.">
+<meta name="keywords" content="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="home">
+  <meta name="twitter:description" content="Hypothesis Testing: An Overview Hypothesis Testing is a fundamental statistical method used to make inferences or draw conclusions about a population based on sample data. It is commonly used to test if a claim about a population is supported by data or if the observed effect is statistically significant.
+Key Concepts in Hypothesis Testing Link to heading 1. Null Hypothesis $H_0$ and Alternative Hypothesis ($H_1$) Link to heading Null Hypothesis ($H_0$): A statement or assumption about the population that we seek to test. It is typically a statement of “no effect” or “no difference”.">
+
+<meta property="og:url" content="https://dwil2444.github.io/posts/stats/general/ht/">
+  <meta property="og:site_name" content="home">
+  <meta property="og:title" content="home">
+  <meta property="og:description" content="Hypothesis Testing: An Overview Hypothesis Testing is a fundamental statistical method used to make inferences or draw conclusions about a population based on sample data. It is commonly used to test if a claim about a population is supported by data or if the observed effect is statistically significant.
+Key Concepts in Hypothesis Testing Link to heading 1. Null Hypothesis $H_0$ and Alternative Hypothesis ($H_1$) Link to heading Null Hypothesis ($H_0$): A statement or assumption about the population that we seek to test. It is typically a statement of “no effect” or “no difference”.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-04T17:11:41-05:00">
+    <meta property="article:modified_time" content="2025-02-04T17:11:41-05:00">
+
+
+
+
+<link rel="canonical" href="https://dwil2444.github.io/posts/stats/general/ht/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://dwil2444.github.io/">
+      home
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/teaching">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cv.pdf">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://dwil2444.github.io/posts/stats/general/ht/">
+              
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-02-04T17:11:41-05:00">
+                February 4, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 align="center"> Hypothesis Testing: An Overview </h1>
+<p>Hypothesis Testing is a fundamental statistical method used to make inferences or draw conclusions about a population
+based on sample data. It is commonly used to test if a claim about a population is supported by data or if the observed effect is
+<strong>statistically significant.</strong></p>
+<h1 id="key-concepts-in-hypothesis-testing">
+  Key Concepts in Hypothesis Testing
+  <a class="heading-link" href="#key-concepts-in-hypothesis-testing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<hr />
+<h3 id="1-null-hypothesis-h_0-and-alternative-hypothesis-h_1">
+  1. Null Hypothesis $H_0$ and Alternative Hypothesis ($H_1$)
+  <a class="heading-link" href="#1-null-hypothesis-h_0-and-alternative-hypothesis-h_1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p>Null Hypothesis ($H_0$): A statement or assumption about the population that we seek to test. It is typically a statement of &ldquo;no effect&rdquo; or &ldquo;no difference&rdquo;.</p>
+</li>
+<li>
+<p>Alternative Hypothesis: ($H_1$): The statement that contradicts the null hypothesis, representing the claim or effect you are testing for.</p>
+</li>
+</ul>
+<p>For example:</p>
+<ul>
+<li>Null Hypothesis ($H_0$): There is no difference in heights between men and women.</li>
+<li>Alternative Hypothesis: ($H_1$): There is a significant difference in heights between men and women.</li>
+</ul>
+<hr />
+<h3 id="2-type-i-and-type-ii-errors">
+  2. Type I and Type II Errors:
+  <a class="heading-link" href="#2-type-i-and-type-ii-errors">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p>Type I Error (False Positive): Rejecting the null hypothesis, when it is actually true. This error occurs when we incorrectly conclude there is an effect or difference when there isn&rsquo;t one.</p>
+<ul>
+<li>Probability of Type I Error = <strong>$\alpha$ (alpha)</strong>, often called the <strong>significance level</strong> (typically 0.05).</li>
+</ul>
+</li>
+<li>
+<p>Type II Error (False Negative): Failing to reject the null hypothesis when it is actually false. This occurs when we miss a true
+effect or difference.</p>
+<ul>
+<li>Probability of Type II Error = <strong>$\beta$ (beta)</strong></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="3-significance-level-alpha">
+  3. Significance Level ($\alpha$):
+  <a class="heading-link" href="#3-significance-level-alpha">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <strong>significance level</strong> ($\alpha$) is the threshold used to decide whether the null hypothesis can be rejected. It represents
+the probability of committing a Type I error. Common values for $\alpha$ are 0.05, 0.01 and 0.10.</p>
+<ul>
+<li>If $p$-value $\leq \alpha$, we reject the null hypothesis.</li>
+<li>If $p$-value $&gt; \alpha$, we fail to reject the null hypothesis.</li>
+</ul>
+<hr />
+<h3 id="4-test-statistic">
+  4. Test Statistic:
+  <a class="heading-link" href="#4-test-statistic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A <strong>test statistic</strong> is a value calculated from the sample data that is used to determine whether to reject the null hypothesis. It measures the difference between the sample statistic and the population parameter under the null hypothesis, expressed in terms of the standard error. For example in a t-test, the test statistic is given by:</p>
+<p>$$
+t = \frac{\bar{x} - \mu_{0}}{\frac{s}{\sqrt{n}}}
+$$</p>
+<p>where:</p>
+<ul>
+<li>$\bar{x}$ = sample mean</li>
+<li>$\mu_{0}$ = population mean under the null hypothesis</li>
+<li>$s$ = standard deviation</li>
+<li>$n$ = sample size</li>
+</ul>
+<hr />
+<h3 id="5-confidence-intervals-ci">
+  5. Confidence Intervals (CI):
+  <a class="heading-link" href="#5-confidence-intervals-ci">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A confidence interval is a range of values within which the true population paramter is likely to fall, with a certain levle of confidence (typically 95%).  It offers more information thana simple hypothesis test, as it not only shows if a result is statistically significant but also gives the range of plausible values.</p>
+<p>It is typically expressed as:</p>
+<p>$$
+\hat{\theta} \pm z_{\alpha /2} \cdot SE(\hat{\theta})
+$$
+where:</p>
+<ul>
+<li>$\hat{\theta}$ is the sample estimate of the parameter</li>
+<li>$z_{\alpha / 2}$ is the critical value from the standard normal distribution (e.g 1.96 for a 95% CI)</li>
+<li>$SE (\hat{\theta})$ is the standard error of the estimate</li>
+</ul>
+<hr />
+<h3 id="6-common-hypothesis-tests">
+  6. Common Hypothesis Tests:
+  <a class="heading-link" href="#6-common-hypothesis-tests">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>One-Sample t-test:</strong> Test whether the mean of a single sample is equal to a known value (population mean)</p>
+<ul>
+<li>Example: is the average weight of apples in a batch equal to 200g?</li>
+</ul>
+</li>
+<li>
+<p><strong>Two-Sample t-test:</strong> Compares the means of two independent groups to see if they are significantly different.</p>
+<ul>
+<li>Example: Is there a significant difference in test scores between two groups of students?</li>
+</ul>
+</li>
+<li>
+<p><strong>Paired t-test:</strong> Compares the means of two related groups (e.g before and after treatment on the same subjects).</p>
+<ul>
+<li>Example: Does a drug lead to a significant change in blood pressure before and after treatment?</li>
+</ul>
+</li>
+<li>
+<p><strong>Chi-Square t-test:</strong> Compares the observed frequence of categorical data to expected frequencies.</p>
+<ul>
+<li>Example: Are the frequencies of different types of fruits in a market different from expected proportions?</li>
+</ul>
+</li>
+<li>
+<p><strong>ANOVA(Analysis of Variance):</strong> Compares the means of three or more groups to determine if at least one group mean is
+significantly different from the others.</p>
+<ul>
+<li>Example: Do the test scores differ between students from different schools?</li>
+</ul>
+</li>
+<li>
+<p><strong>z-test</strong>: A test for the population mean when the sample size is large and the population standard deviation is unknown</p>
+<ul>
+<li>Example: Is the average height of a population significantly different from a hypothesized value?</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-assumptions-in-hypothesis-testing">
+  7. Assumptions in Hypothesis Testing:
+  <a class="heading-link" href="#7-assumptions-in-hypothesis-testing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Each hypothesis test has certain assumptions that must be met for the test results to be valid:</p>
+<ul>
+<li><strong>Normality:</strong> Many tests (e.g t-tests) assume that the data follows a normal distribution, especially for small sample size.</li>
+<li><strong>Independence:</strong> The observations should be independent of each other (e.g. in a two-sample t-test)</li>
+<li><strong>Homogeneity of Variance</strong>: For some tests (e.g. two-sample t-tests) the variability within each group should be similar.</li>
+</ul>
+<p>If these assumptions are violated, alternative tests or data transformations might be needed.</p>
+<h3 id="8-power-of-a-test">
+  8. Power of a Test:
+  <a class="heading-link" href="#8-power-of-a-test">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <strong>power</strong> of a statistical test is the probability that the test correctly rejects the null hypothesis when it is false
+(i.e. avoiding a Type II error). It depends on:</p>
+<ul>
+<li>Sample Size: Larger samples increase power</li>
+<li>Effect Size: Larger differences between groups or stronger effects increase power</li>
+<li>Significance Level: A higher $\alpha$  like (0.1) increases power but also increases the risk of a Type I Error.</li>
+</ul>
+<h3 id="9-common-pitfalls-in-hypothesis-testing">
+  9. Common Pitfalls in Hypothesis Testing:
+  <a class="heading-link" href="#9-common-pitfalls-in-hypothesis-testing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>p-hacking</strong>: manipulating the analysis (e.g. trying different tests or adjusting data) to achieve a significant p-value. This is
+considered unethical.</p>
+</li>
+<li>
+<p><strong>Over reliance on p-values</strong>: A p-value alone does not provide all the information. Confidence intervals, effect size, and
+context should also be considered.</p>
+</li>
+<li>
+<p><strong>Multiple Comparisons</strong>: When conducting many tests, the likelihood of obtaining a false positive increases. Techniques like the
+Bonferroni correction help address this.</p>
+</li>
+</ul>
+<h3 id="9-practical-applications-of-hypothesis-testing">
+  9. Practical Applications of Hypothesis Testing:
+  <a class="heading-link" href="#9-practical-applications-of-hypothesis-testing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In practice hypothesis testing us used to:</p>
+<ul>
+<li>Determine if a new drug or treatment is effective.</li>
+<li>Evaluate whether an advertisement campaign increases sales.</li>
+<li>Test if a production process is working within specified limits</li>
+</ul>
+<h3 id="conclusion">
+  Conclusion:
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Hypotehsis testing provides a systematic way to evaluate claims about populations using sample data. Understanding the
+underlying concepts such as the null and alternative hypotheses, significance level, test statistics, p-values and errors
+(Type I and Type II) is crucial for performing accurate and meaningful tests.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mlbytes" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+    
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

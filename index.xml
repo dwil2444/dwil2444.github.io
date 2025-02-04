@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 by Dane Williamson. &lt;a href=&#39;https://dwil2444.github.io/privacy&#39;&gt;Privacy policy&lt;/a&gt;.</copyright>
-    <lastBuildDate>Tue, 04 Feb 2025 13:52:07 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 17:11:41 -0500</lastBuildDate>
     <atom:link href="https://dwil2444.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://dwil2444.github.io/posts/stats/general/ht/</link>
+      <pubDate>Tue, 04 Feb 2025 17:11:41 -0500</pubDate>
+      <guid>https://dwil2444.github.io/posts/stats/general/ht/</guid>
+      <description>&lt;h1 align=&#34;center&#34;&gt; Hypothesis Testing: An Overview &lt;/h1&gt;&#xA;&lt;p&gt;Hypothesis Testing is a fundamental statistical method used to make inferences or draw conclusions about a population&#xA;based on sample data. It is commonly used to test if a claim about a population is supported by data or if the observed effect is&#xA;&lt;strong&gt;statistically significant.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;key-concepts-in-hypothesis-testing&#34;&gt;&#xA;  Key Concepts in Hypothesis Testing&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#key-concepts-in-hypothesis-testing&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr /&gt;&#xA;&lt;h3 id=&#34;1-null-hypothesis-h_0-and-alternative-hypothesis-h_1&#34;&gt;&#xA;  1. Null Hypothesis $H_0$ and Alternative Hypothesis ($H_1$)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-null-hypothesis-h_0-and-alternative-hypothesis-h_1&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Null Hypothesis ($H_0$): A statement or assumption about the population that we seek to test. It is typically a statement of &amp;ldquo;no effect&amp;rdquo; or &amp;ldquo;no difference&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Basic Probability Review</title>
       <link>https://dwil2444.github.io/posts/stats/general/basics/</link>
