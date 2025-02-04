@@ -14,7 +14,8 @@ series = []
 
 ## Featured Articles
 
-
+- [Probability Basics](/posts/stats/general/basics)
 - [Bayesian Inference](/posts/stats/general/bp)
 - [Confidence Intervals](/posts/stats/general/ci)
 - [Maximum Likelihood Estimates](/posts/stats/general/mle)
+
