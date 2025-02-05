@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+   · home
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="description" content=" Resampling Methods: Bootstrap and Cross-Validation 
+Resampling methods are powerful statistical techniques used to assess model performance and estimate
+uncertainty in datasets. Two widely used resampling techniques are bootstrap and cross-validation.
+These methods help mitigate issues like overfitting and provide robut estimates of model performance.
+
+  Bootstrap
+  
+    
+    Link to heading
+  
+
+
+  What is Bootstrap?
+  
+    
+    Link to heading
+  
+
+The bootstrap is a resampling technique that involves repeatedly drawing samples, with replacement, from
+the original dataset to estimate statistical properties (e.g. variance, confidence intervals and standard
+errors). It is particularly useful when analytical solutions are diificult to derive.">
+<meta name="keywords" content="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="home">
+  <meta name="twitter:description" content="Resampling Methods: Bootstrap and Cross-Validation Resampling methods are powerful statistical techniques used to assess model performance and estimate uncertainty in datasets. Two widely used resampling techniques are bootstrap and cross-validation. These methods help mitigate issues like overfitting and provide robut estimates of model performance.
+Bootstrap Link to heading What is Bootstrap? Link to heading The bootstrap is a resampling technique that involves repeatedly drawing samples, with replacement, from the original dataset to estimate statistical properties (e.g. variance, confidence intervals and standard errors). It is particularly useful when analytical solutions are diificult to derive.">
+
+<meta property="og:url" content="https://dwil2444.github.io/posts/stats/general/resampling/">
+  <meta property="og:site_name" content="home">
+  <meta property="og:title" content="home">
+  <meta property="og:description" content="Resampling Methods: Bootstrap and Cross-Validation Resampling methods are powerful statistical techniques used to assess model performance and estimate uncertainty in datasets. Two widely used resampling techniques are bootstrap and cross-validation. These methods help mitigate issues like overfitting and provide robut estimates of model performance.
+Bootstrap Link to heading What is Bootstrap? Link to heading The bootstrap is a resampling technique that involves repeatedly drawing samples, with replacement, from the original dataset to estimate statistical properties (e.g. variance, confidence intervals and standard errors). It is particularly useful when analytical solutions are diificult to derive.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-04T18:55:35-05:00">
+    <meta property="article:modified_time" content="2025-02-04T18:55:35-05:00">
+
+
+
+
+<link rel="canonical" href="https://dwil2444.github.io/posts/stats/general/resampling/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://dwil2444.github.io/">
+      home
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/teaching">Teaching</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cv.pdf">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://dwil2444.github.io/posts/stats/general/resampling/">
+              
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-02-04T18:55:35-05:00">
+                February 4, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 align="center"> Resampling Methods: Bootstrap and Cross-Validation </h1>
+<p>Resampling methods are powerful statistical techniques used to assess model performance and estimate
+uncertainty in datasets. Two widely used resampling techniques are <strong>bootstrap</strong> and <strong>cross-validation.</strong>
+These methods help mitigate issues like overfitting and provide robut estimates of model performance.</p>
+<h1 id="bootstrap">
+  Bootstrap
+  <a class="heading-link" href="#bootstrap">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h3 id="what-is-bootstrap">
+  What is Bootstrap?
+  <a class="heading-link" href="#what-is-bootstrap">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The bootstrap is a resampling technique that involves repeatedly drawing samples, with replacement, from
+the original dataset to estimate statistical properties (e.g. variance, confidence intervals and standard
+errors). It is particularly useful when analytical solutions are diificult to derive.</p>
+<h5 id="how-bootstrap-works">
+  How Bootstrap Works
+  <a class="heading-link" href="#how-bootstrap-works">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<ol>
+<li>Given a dataset of size n, create multiple new datasets (&ldquo;bootstrap samples&rdquo;) by randomly sampling n observations
+with replacement.</li>
+<li>Compute the statistic of interest (e.g. mean, median, model paramater) for each bootstrap sample.</li>
+<li>Use the distribution of the computed statistics to estimate confidence intervals or assesss variability.</li>
+</ol>
+<h6 id="key-properties-of-bootstrap">
+  Key Properties of Bootstrap:
+  <a class="heading-link" href="#key-properties-of-bootstrap">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h6>
+<ul>
+<li>Helps estimate the sampling distribution of a statistic.</li>
+<li>Works well for sample sizes.</li>
+<li>Does not asssume a specific distribution.</li>
+</ul>
+<hr />
+<h1 id="cross-validation">
+  Cross-Validation:
+  <a class="heading-link" href="#cross-validation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h3 id="what-is-cross-validation">
+  What is Cross-Validation?
+  <a class="heading-link" href="#what-is-cross-validation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cross-validation (CV) is a model validation technique used to asssess how well a statistical model
+generalizes to unseen data. Instead of using a single train-test split, cross-validation partitionss
+data into multiple subsets to provide more reliable performance estimates.</p>
+<h5 id="types-of-cross-validation">
+  Types of Cross-Validation:
+  <a class="heading-link" href="#types-of-cross-validation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<p>a. <strong>k-Fold Cross Validation:</strong></p>
+<ul>
+<li>The dataset is split into k equally sized subsets (&ldquo;folds&rdquo;)</li>
+<li>The model is trained on k-1 folds and tested on the remaining fold.</li>
+<li>The process is repeated k times, each time using a different fold as the test set.</li>
+<li>The final performance metrics is the aveerage across all old.s</li>
+</ul>
+<p>Example: If k=5, thee dataset is split into five parts and the model is trained/tested five times.</p>
+<p>b. <strong>Leave-One-Out Cross-Validation (LOOCV)</strong>:</p>
+<ul>
+<li>A special case of k-fold cv, where k = n (number of samples).</li>
+<li>Each observation is used as a test set exactly once, while the rest are used for training.</li>
+<li>Computationally expensive but useful for small datasets.</li>
+</ul>
+<p>c. <strong>Stratified K-Fold Cross-Validation:</strong></p>
+<ul>
+<li>Ensures that each fold maintains the same proportion of classes as the original dataset (useful
+for imbalanced datasets)</li>
+</ul>
+<p>d. <strong>Time-Series Cross-Validation:</strong></p>
+<ul>
+<li>Used for time-dependent data.</li>
+<li>Data is split in a way that ensures training only uses past observations.</li>
+</ul>
+<hr />
+<h2 id="bootstrap-vs-cross-validation-key-differences">
+  <strong>Bootstrap vs. Cross-Validation: Key Differences</strong>
+  <a class="heading-link" href="#bootstrap-vs-cross-validation-key-differences">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Bootstrap</th>
+          <th>Cross-Validation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Purpose</td>
+          <td>Estimate uncertainty and confidence intervals</td>
+          <td>Estimate model performance</td>
+      </tr>
+      <tr>
+          <td>Resampling</td>
+          <td>Sampling with replacement</td>
+          <td>Splitting dataset into training/testing sets</td>
+      </tr>
+      <tr>
+          <td>Data Usage</td>
+          <td>Some observations may be repeated</td>
+          <td>Each observation used in different folds</td>
+      </tr>
+      <tr>
+          <td>Use Case</td>
+          <td>Estimating confidence intervals, variance</td>
+          <td>Avoiding overfitting, selecting hyperparameters</td>
+      </tr>
+  </tbody>
+</table>
+<hr />
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mlbytes" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+    
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
