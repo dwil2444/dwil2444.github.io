@@ -19,4 +19,5 @@ series = []
 - [Confidence Intervals](/posts/stats/general/ci)
 - [Hypothesis Testing](/posts/stats/general/ht)
 - [Maximum Likelihood Estimates](/posts/stats/general/mle)
+- [Resampling Methods](/posts/stats/general/resampling)
 
