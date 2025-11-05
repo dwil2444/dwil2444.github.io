@@ -6,6 +6,10 @@ hide_title: true
 
 # 2025
 
+
+
+* **Williamson, D.**, Ji, Y., & Dwyer, M. (2025). [Syntactic Blind Spots: How Misalignment Leads to LLMs' Mathematical Errors. *Proceedings of the 3rd Workshop on Mathematical Natural Language Processing (MathNLP 2025), EMNLP 2025, Suzhou, China.*](https://aclanthology.org/2025.mathnlp-main.1/)  
+
 * **Williamson, D.**, Ji, Y., & Dwyer, M. (2025). [CASE: Contrastive Activation for Saliency Estimation. *arXiv:2506.07327*](https://arxiv.org/abs/2506.07327)
 
 * **Williamson, D.**, Ji, Y., & Dwyer, M. (2025). [Optimizing Latent Dimension Allocation in Hierarchical VAEs: Balancing Attenuation and Information Retention for OOD Detection. *arXiv:2506.10089*](https://arxiv.org/abs/2506.10089)
